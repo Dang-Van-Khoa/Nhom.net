@@ -56,8 +56,8 @@ namespace Du_an
             // danhSachHangHoaToolStripMenuItem
             // 
             this.danhSachHangHoaToolStripMenuItem.Name = "danhSachHangHoaToolStripMenuItem";
-            this.danhSachHangHoaToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.danhSachHangHoaToolStripMenuItem.Text = "Danh sach hang hoa";
+            this.danhSachHangHoaToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.danhSachHangHoaToolStripMenuItem.Text = "Danh sach san pham";
             // 
             // Form1
             // 
