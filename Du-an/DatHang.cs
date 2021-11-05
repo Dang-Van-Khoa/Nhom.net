@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Du_an
 {
-    public partial class Form1 : Form
+    public partial class DatHang : Form
     {
-        public Form1()
+        public DatHang()
         {
             InitializeComponent();
-        }
-
-        private void atHangToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form DH = new DatHang();
-            DH.Show();
         }
     }
 }

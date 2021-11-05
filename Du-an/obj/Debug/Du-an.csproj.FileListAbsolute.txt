@@ -1,0 +1,11 @@
+D:\NEU\Du-an\Du-an\bin\Debug\Du-an.exe.config
+D:\NEU\Du-an\Du-an\bin\Debug\Du-an.exe
+D:\NEU\Du-an\Du-an\bin\Debug\Du-an.pdb
+D:\NEU\Du-an\Du-an\obj\Debug\Du-an.csproj.AssemblyReference.cache
+D:\NEU\Du-an\Du-an\obj\Debug\Du_an.DatHang.resources
+D:\NEU\Du-an\Du-an\obj\Debug\Du_an.Form1.resources
+D:\NEU\Du-an\Du-an\obj\Debug\Du_an.Properties.Resources.resources
+D:\NEU\Du-an\Du-an\obj\Debug\Du-an.csproj.GenerateResource.cache
+D:\NEU\Du-an\Du-an\obj\Debug\Du-an.csproj.CoreCompileInputs.cache
+D:\NEU\Du-an\Du-an\obj\Debug\Du-an.exe
+D:\NEU\Du-an\Du-an\obj\Debug\Du-an.pdb
