@@ -56,6 +56,13 @@ TenNhacc nvarchar(100) not null,
 DiaChi nvarchar(200) not null,
 DienThoai varchar(10) check (dienthoai like '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]')
 )
+
+insert into Nhacc values ('Ao', N'Công ty Áo chất lượng cao', N'123 Hà Nội', '0123456789');
+insert into Nhacc values ('Gi', N'Công ty Giày chất lượng cao', N'143 Hà Nội','0445566777');
+insert into Nhacc values ('Mu', N'Công ty Mũ chất lượng cao', N'53 Hà Nội', '0333456788');
+insert into Nhacc values ('Kh', N'Công ty Khăn chất lượng cao', N'53 Hà Nội', '0338886777');
+
+select * from Nhacc;
 -- drop table Nhacc
 
 

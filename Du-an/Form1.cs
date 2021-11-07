@@ -40,5 +40,17 @@ namespace Du_an
             Form Nhacc = new Bc_NCC();
             Nhacc.Show();
         }
+
+        private void danhSachHangHoaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form SanPham = new SanPham();
+            SanPham.Show();
+        }
+
+        private void khoHangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form TonKho = new TonKho();
+            TonKho.Show();
+        }
     }
 }
