@@ -35,7 +35,7 @@ namespace Du_an
             this.khoHangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nguoiDungToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giaoDichToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.atHangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DatHangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nhaCungCapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhMucSanPhamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.taiKhoanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,6 +44,8 @@ namespace Du_an
             this.dangKyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timKiemSanPhamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.baoCaoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.donDatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bcNhaccToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +69,7 @@ namespace Du_an
             this.khoHangToolStripMenuItem,
             this.nguoiDungToolStripMenuItem,
             this.giaoDichToolStripMenuItem,
-            this.atHangToolStripMenuItem,
+            this.DatHangToolStripMenuItem,
             this.nhaCungCapToolStripMenuItem,
             this.danhMucSanPhamToolStripMenuItem});
             this.quanLyToolStripMenuItem.Name = "quanLyToolStripMenuItem";
@@ -98,18 +100,19 @@ namespace Du_an
             this.giaoDichToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.giaoDichToolStripMenuItem.Text = "Giao dich";
             // 
-            // atHangToolStripMenuItem
+            // DatHangToolStripMenuItem
             // 
-            this.atHangToolStripMenuItem.Name = "atHangToolStripMenuItem";
-            this.atHangToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.atHangToolStripMenuItem.Text = "Dat hang";
-            this.atHangToolStripMenuItem.Click += new System.EventHandler(this.atHangToolStripMenuItem_Click);
+            this.DatHangToolStripMenuItem.Name = "DatHangToolStripMenuItem";
+            this.DatHangToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.DatHangToolStripMenuItem.Text = "Dat hang";
+            this.DatHangToolStripMenuItem.Click += new System.EventHandler(this.DatHangToolStripMenuItem_Click);
             // 
             // nhaCungCapToolStripMenuItem
             // 
             this.nhaCungCapToolStripMenuItem.Name = "nhaCungCapToolStripMenuItem";
             this.nhaCungCapToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.nhaCungCapToolStripMenuItem.Text = "nha cung cap";
+            this.nhaCungCapToolStripMenuItem.Click += new System.EventHandler(this.nhaCungCapToolStripMenuItem_Click);
             // 
             // danhMucSanPhamToolStripMenuItem
             // 
@@ -130,19 +133,19 @@ namespace Du_an
             // dangNhapToolStripMenuItem
             // 
             this.dangNhapToolStripMenuItem.Name = "dangNhapToolStripMenuItem";
-            this.dangNhapToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.dangNhapToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dangNhapToolStripMenuItem.Text = "Dang nhap";
             // 
             // dangXuatToolStripMenuItem
             // 
             this.dangXuatToolStripMenuItem.Name = "dangXuatToolStripMenuItem";
-            this.dangXuatToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.dangXuatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dangXuatToolStripMenuItem.Text = "Dang xuat";
             // 
             // dangKyToolStripMenuItem
             // 
             this.dangKyToolStripMenuItem.Name = "dangKyToolStripMenuItem";
-            this.dangKyToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.dangKyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dangKyToolStripMenuItem.Text = "Dang ky";
             // 
             // timKiemSanPhamToolStripMenuItem
@@ -153,9 +156,26 @@ namespace Du_an
             // 
             // baoCaoToolStripMenuItem
             // 
+            this.baoCaoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.donDatToolStripMenuItem,
+            this.bcNhaccToolStripMenuItem});
             this.baoCaoToolStripMenuItem.Name = "baoCaoToolStripMenuItem";
             this.baoCaoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.baoCaoToolStripMenuItem.Text = "Bao cao";
+            // 
+            // donDatToolStripMenuItem
+            // 
+            this.donDatToolStripMenuItem.Name = "donDatToolStripMenuItem";
+            this.donDatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.donDatToolStripMenuItem.Text = "Don Dat";
+            this.donDatToolStripMenuItem.Click += new System.EventHandler(this.donDatToolStripMenuItem_Click);
+            // 
+            // bcNhaccToolStripMenuItem
+            // 
+            this.bcNhaccToolStripMenuItem.Name = "bcNhaccToolStripMenuItem";
+            this.bcNhaccToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bcNhaccToolStripMenuItem.Text = "Bc_Nhacc";
+            this.bcNhaccToolStripMenuItem.Click += new System.EventHandler(this.bcNhaccToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -165,7 +185,9 @@ namespace Du_an
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phan mem quan ly ban hang";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -181,7 +203,7 @@ namespace Du_an
         private System.Windows.Forms.ToolStripMenuItem khoHangToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nguoiDungToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem giaoDichToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem atHangToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem DatHangToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nhaCungCapToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem danhMucSanPhamToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem taiKhoanToolStripMenuItem;
@@ -190,6 +212,8 @@ namespace Du_an
         private System.Windows.Forms.ToolStripMenuItem dangKyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem timKiemSanPhamToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem baoCaoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem donDatToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bcNhaccToolStripMenuItem;
     }
 }
 

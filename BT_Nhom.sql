@@ -63,7 +63,7 @@ CREATE TABLE SanPham (
 
   Id_SanPham char(4) NOT NULL PRIMARY KEY,
 
-  Manhacc char(3) not null,
+  MaNhacc char(3) not null,
 
   Ten varchar(100) NOT NULL,
 
@@ -130,7 +130,9 @@ CREATE TABLE DatHang (
 
   SoLuongMua int NOT NULL DEFAULT '0',
 
-  TongTien float NOT NULL DEFAULT '0.0000',
+  Gia float NOT NULL,
+
+  TongTien as Gia * SoLuongMua,
 
   TrangThai int NOT NULL DEFAULT '0',
 
@@ -153,7 +155,17 @@ foreign key (Id_SanPham) references SanPham(Id_SanPham)
 )
 -- drop table TonKho
 
+Create Proc ThongTinSP @Id_SanPham char(4)
+as
+begin
+select Id_SanPham, Ten, Gia, Anh, SanPham.MaNhacc, TenNhacc
+from SanPham, Nhacc
+where SanPham.Id_SanPham = Nhacc.MaNhacc and @Id_SanPham = Id_SanPham
+end;
 
 
 
+DROP PROC ThongTinSP
+EXEC ThongTinSP ''
 
+select * from DatHang

@@ -17,10 +17,28 @@ namespace Du_an
             InitializeComponent();
         }
 
-        private void atHangToolStripMenuItem_Click(object sender, EventArgs e)
+        private void nhaCungCapToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form NCC = new Nhacc();
+            NCC.Show();
+        }
+
+        private void DatHangToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form DH = new DatHang();
             DH.Show();
+        }
+
+        private void donDatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form DonDat = new Bc_DonHang();
+            DonDat.Show();
+        }
+
+        private void bcNhaccToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form Nhacc = new Bc_NCC();
+            Nhacc.Show();
         }
     }
 }
