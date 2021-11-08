@@ -104,6 +104,12 @@
     <Compile Include="SanPham.Designer.cs">
       <DependentUpon>SanPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="TimKiemSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimKiemSP.Designer.cs">
+      <DependentUpon>TimKiemSP.cs</DependentUpon>
+    </Compile>
     <Compile Include="TonKho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </Compile>
     <EmbeddedResource Include="SanPham.resx">
       <DependentUpon>SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiemSP.resx">
+      <DependentUpon>TimKiemSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TonKho.resx">
       <DependentUpon>TonKho.cs</DependentUpon>
