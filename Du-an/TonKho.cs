@@ -31,7 +31,7 @@ namespace Du_an
             DataTable dta = new DataTable();
             dta = kn.Lay_DulieuBang("select * from SanPham ORDER BY Id_SanPham");
             cboId_SanPham.DataSource = dta;
-            cboId_SanPham.DisplayMember = "Id_SanPham";
+            cboId_SanPham.DisplayMember = "Ten";
             cboId_SanPham.ValueMember = "Id_SanPham";
         }
 
@@ -71,7 +71,7 @@ namespace Du_an
             txtSldau.Value = 0;
             txtSlnhap.Value = 0;
             txtSlxuat.Value = 0;
-            txtSlCuoi.Text = "";
+            txtSlCuoi.Text = ".............";
             txtNgay.Focus();
             btnLuu.Enabled = true;
             btnSua.Enabled = false;
@@ -97,7 +97,7 @@ namespace Du_an
                 tb = MessageBox.Show("Bạn có muốn lưu không", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (tb == DialogResult.OK)
                 {
-                    string sql_luu = "Insert into TonKho values ('" + txtNgay.Text + "', '" + cboId_SanPham.SelectedValue + "', " + txtSldau.Value + ", " + txtSlnhap.Value + ", " + txtSlxuat.Value + ", '" + txtSlCuoi.Text + "')";
+                    string sql_luu = "Insert into TonKho values ('" + txtNgay.Text + "', '" + cboId_SanPham.SelectedValue + "', " + txtSldau.Value + ", " + txtSlnhap.Value + ", " + txtSlxuat.Value + ")";
                     kn.ThucThi(sql_luu);
                 }
                 Bang_TonKho();

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;              // Khai báo thư viện
 using System.Data.SqlClient; // Khai báo thư viện
+using System.IO;
 
 namespace Du_an
 {
