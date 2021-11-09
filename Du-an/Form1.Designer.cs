@@ -129,7 +129,7 @@ namespace Du_an
             this.dangXuatToolStripMenuItem,
             this.dangKyToolStripMenuItem});
             this.taiKhoanToolStripMenuItem.Name = "taiKhoanToolStripMenuItem";
-            this.taiKhoanToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.taiKhoanToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.taiKhoanToolStripMenuItem.Text = "Tai khoan";
             // 
             // dangNhapToolStripMenuItem
@@ -153,8 +153,9 @@ namespace Du_an
             // timKiemSanPhamToolStripMenuItem
             // 
             this.timKiemSanPhamToolStripMenuItem.Name = "timKiemSanPhamToolStripMenuItem";
-            this.timKiemSanPhamToolStripMenuItem.Size = new System.Drawing.Size(124, 20);
+            this.timKiemSanPhamToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
             this.timKiemSanPhamToolStripMenuItem.Text = "Tim kiem san pham";
+            this.timKiemSanPhamToolStripMenuItem.Click += new System.EventHandler(this.timKiemSanPhamToolStripMenuItem_Click);
             // 
             // baoCaoToolStripMenuItem
             // 

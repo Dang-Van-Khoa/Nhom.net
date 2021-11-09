@@ -162,12 +162,12 @@ foreign key (Id_SanPham) references SanPham(Id_SanPham)
 )
 -- drop table TonKho
 
-Create Proc ThongTinSP @Id_SanPham char(4)
+Create Proc ThongTinSP @Ten varchar(100)
 as
 begin
 select Id_SanPham, Ten, Gia, Anh, SanPham.MaNhacc, TenNhacc
 from SanPham, Nhacc
-where SanPham.Id_SanPham = Nhacc.MaNhacc and @Id_SanPham = Id_SanPham
+where SanPham.Id_SanPham = Nhacc.MaNhacc and @Ten= Ten
 end;
 
 

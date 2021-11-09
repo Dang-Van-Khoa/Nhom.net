@@ -68,3 +68,6 @@ E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du-an.exe
 E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du-an.pdb
 E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.SanPham.resources
 E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.TonKho.resources
+D:\NEU\Du-an\Du-an\obj\Debug\Du_an.SanPham.resources
+D:\NEU\Du-an\Du-an\obj\Debug\Du_an.TonKho.resources
+D:\NEU\Du-an\Du-an\obj\Debug\Du_an.TimKiemSP.resources
