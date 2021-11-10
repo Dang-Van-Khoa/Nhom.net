@@ -71,3 +71,6 @@ E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.TonKho.resources
 D:\NEU\Du-an\Du-an\obj\Debug\Du_an.SanPham.resources
 D:\NEU\Du-an\Du-an\obj\Debug\Du_an.TonKho.resources
 D:\NEU\Du-an\Du-an\obj\Debug\Du_an.TimKiemSP.resources
+E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.TimKiemSP.resources
+E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.Bc_KhoHang.resources
+E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.Bc_SPham.resources
