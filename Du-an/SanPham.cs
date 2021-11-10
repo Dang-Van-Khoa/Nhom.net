@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient; //them thu vien
+using System.IO;
 
 namespace Du_an
 {
     public partial class SanPham : Form
     {
         KetNoi kn = new KetNoi(); //khoi tao class
+        SqlConnection cnn = new SqlConnection(@"Data Source=DESKTOP-5594BKK\SQLEXPRESS;Initial Catalog=QLBH;Integrated Security=True");
         public SanPham()
         {
             InitializeComponent();
@@ -106,8 +108,21 @@ namespace Du_an
                 tb = MessageBox.Show("Bạn có muốn lưu không", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (tb == DialogResult.OK)
                 {
-                    string sql_luu = "Insert into SanPham values ('" + txtId_SanPham.Text + "', '" + cboManhacc.SelectedValue + "', '" + txtTen.Text + "', " + txtGia.Value + ", '" + txtNoiDung.Text + "', " + txtGiamGia.Value + ", '" + txtAnh.Text + "', '" + txtNgayTao.Text + "', " + txtLuotXem.Value + ")";
-                    kn.ThucThi(sql_luu);
+                    //string sql_luu = "Insert into SanPham values ('" + txtId_SanPham.Text + "', '" + cboManhacc.SelectedValue + "', '" + txtTen.Text + "', " + txtGia.Value + ", '" + txtNoiDung.Text + "', " + txtGiamGia.Value + ", '" + txtAnh.ImageLocation + "', '" + txtNgayTao.Text + "', " + txtLuotXem.Value + ")";
+                    byte[] b = ImageToByteArray(txtAnh.Image);
+                    cnn.Open();
+                    SqlCommand cmd = new SqlCommand("Insert into SanPham values(@Id_SanPham, @MaNhacc, @Ten, @Gia, @NoiDung, @GiamGia, @Anh, @NgayTao, @LuotXem)", cnn);
+                    cmd.Parameters.Add("@Id_SanPham", txtId_SanPham.Text);
+                    cmd.Parameters.Add("@MaNhacc", cboManhacc.SelectedValue);
+                    cmd.Parameters.Add("@Ten", txtTen.Text);
+                    cmd.Parameters.Add("@Gia", txtGia.Value);
+                    cmd.Parameters.Add("@NoiDung", txtNoiDung.Text);
+                    cmd.Parameters.Add("@GiamGia", txtGiamGia.Value);
+                    cmd.Parameters.Add("@Anh", b);
+                    cmd.Parameters.Add("@NgayTao", txtNgayTao.Text);
+                    cmd.Parameters.Add("@LuotXem", txtLuotXem.Value);
+                    cmd.ExecuteNonQuery();
+                    cnn.Close();
                 }
                 Bang_SanPham();
                 HienThi_DuLieu();
@@ -115,6 +130,14 @@ namespace Du_an
                 btnSua.Enabled = true;
                 btnXoa.Enabled = true;
             }
+        }
+
+        byte[] ImageToByteArray(Image img)
+        {
+            MemoryStream m = new MemoryStream();
+            img.Save(m, System.Drawing.Imaging.ImageFormat.Png);
+            return m.ToArray();
+
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -150,6 +173,19 @@ namespace Du_an
             DialogResult tb;
             tb = MessageBox.Show("Bạn có muốn thoát không", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (tb == DialogResult.OK) this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.InitialDirectory = "D://NEU";
+            openFileDialog1.Title = "Chọn file để upload";
+            openFileDialog1.Filter = "Chọn loại ảnh(*.jpg)|*.jpg|All files (*.*)|*.*";
+            openFileDialog1.FilterIndex = 1;
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                txtAnh.ImageLocation = openFileDialog1.FileName;
+                textBox1.Text = openFileDialog1.FileName;
+            }
         }
     }
 }

@@ -54,6 +54,10 @@ namespace Du_an
             this.txtLuotXem = new System.Windows.Forms.NumericUpDown();
             this.txtGiamGia = new System.Windows.Forms.NumericUpDown();
             this.txtGia = new System.Windows.Forms.NumericUpDown();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_SanPham)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLuotXem)).BeginInit();
@@ -250,6 +254,7 @@ namespace Du_an
             this.txtAnh.Location = new System.Drawing.Point(217, 274);
             this.txtAnh.Name = "txtAnh";
             this.txtAnh.Size = new System.Drawing.Size(217, 137);
+            this.txtAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.txtAnh.TabIndex = 112;
             this.txtAnh.TabStop = false;
             // 
@@ -334,12 +339,48 @@ namespace Du_an
             this.txtGia.Size = new System.Drawing.Size(510, 29);
             this.txtGia.TabIndex = 128;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Blue;
+            this.button1.Location = new System.Drawing.Point(461, 274);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(115, 33);
+            this.button1.TabIndex = 129;
+            this.button1.Text = "Chọn ảnh";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(504, 337);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(222, 20);
+            this.textBox1.TabIndex = 130;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(449, 340);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 16);
+            this.label1.TabIndex = 131;
+            this.label1.Text = "URL";
+            // 
             // SanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 749);
             this.ControlBox = false;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtGia);
             this.Controls.Add(this.txtGiamGia);
             this.Controls.Add(this.txtLuotXem);
@@ -404,5 +445,9 @@ namespace Du_an
         private System.Windows.Forms.NumericUpDown txtLuotXem;
         private System.Windows.Forms.NumericUpDown txtGiamGia;
         private System.Windows.Forms.NumericUpDown txtGia;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
