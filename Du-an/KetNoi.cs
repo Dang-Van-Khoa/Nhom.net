@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;              // Khai báo thư viện
 using System.Data.SqlClient; // Khai báo thư viện
+using System.IO;
 
 namespace Du_an
 {
@@ -17,7 +18,7 @@ namespace Du_an
 
         public void KetNoi_Dulieu()
         {
-            string strKetNoi = @"Data Source=DESKTOP-5594BKK\SQLEXPRESS;Initial Catalog=QLBH;Integrated Security=True";
+            string strKetNoi = @"Data Source=DESKTOP-5594BKK\SQLEXPRESS;Initial Catalog=QLBH;Integrated Security=TrueData Source=DESKTOP-2021BGT;Initial Catalog=QLBH;Integrated Security=True";
             cnn = new SqlConnection(strKetNoi);
             cnn.Open();
         }

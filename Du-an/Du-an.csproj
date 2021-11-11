@@ -65,6 +65,12 @@
     <Compile Include="Bc_DonHang.Designer.cs">
       <DependentUpon>Bc_DonHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bc_KhoHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bc_KhoHang.Designer.cs">
+      <DependentUpon>Bc_KhoHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bc_NCC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,24 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Bc_Nhacc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bc_SanPham.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bc_SanPham.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bc_SPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bc_SPham.Designer.cs">
+      <DependentUpon>Bc_SPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bc_TonKho.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bc_TonKho.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DatHang.cs">
@@ -123,12 +147,26 @@
     <EmbeddedResource Include="Bc_DonHang.resx">
       <DependentUpon>Bc_DonHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Bc_KhoHang.resx">
+      <DependentUpon>Bc_KhoHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bc_NCC.resx">
       <DependentUpon>Bc_NCC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bc_Nhacc.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Bc_Nhacc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bc_SanPham.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Bc_SanPham.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bc_SPham.resx">
+      <DependentUpon>Bc_SPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bc_TonKho.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Bc_TonKho.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="DatHang.resx">
       <DependentUpon>DatHang.cs</DependentUpon>

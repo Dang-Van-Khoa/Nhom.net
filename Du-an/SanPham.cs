@@ -31,37 +31,40 @@ namespace Du_an
         private void Bang_Nhacc()
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("select * from Nhacc ORDER BY Manhacc");
+            dta = kn.Lay_DulieuBang("select * from Nhacc ORDER BY MaNhacc");
             cboManhacc.DataSource = dta;
-            cboManhacc.DisplayMember = "Manhacc";
-            cboManhacc.ValueMember = "Manhacc";
+            cboManhacc.DisplayMember = "MaNhacc"; //Trường hiển thị
+            cboManhacc.ValueMember = "MaNhacc"; //Trường giá trị
         }
 
         private void HienThi_DuLieu()
         {
             txtId_SanPham.DataBindings.Clear();
-            txtId_SanPham.DataBindings.Add("text", DataGrid_SanPham.DataSource, "Id_SanPham");
+            txtId_SanPham.DataBindings.Add("Text", DataGrid_SanPham.DataSource, "Id_SanPham");
 
             cboManhacc.DataBindings.Clear();
-            cboManhacc.DataBindings.Add("text", DataGrid_SanPham.DataSource, "Manhacc");
+            cboManhacc.DataBindings.Add("Text", DataGrid_SanPham.DataSource, "Manhacc");
 
             txtTen.DataBindings.Clear();
-            txtTen.DataBindings.Add("text", DataGrid_SanPham.DataSource, "Ten");
+            txtTen.DataBindings.Add("Text", DataGrid_SanPham.DataSource, "Ten");
+
+            txtGia.DataBindings.Clear();
+            txtGia.DataBindings.Add("Text", DataGrid_SanPham.DataSource, "Gia");
 
             txtNoiDung.DataBindings.Clear();
-            txtNoiDung.DataBindings.Add("text", DataGrid_SanPham.DataSource, "NoiDung");
+            txtNoiDung.DataBindings.Add("Text", DataGrid_SanPham.DataSource, "NoiDung");
 
             txtGiamGia.DataBindings.Clear();
-            txtGiamGia.DataBindings.Add("text", DataGrid_SanPham.DataSource, "GiamGia");
+            txtGiamGia.DataBindings.Add("Text", DataGrid_SanPham.DataSource, "GiamGia");
 
-            txtAnh.DataBindings.Clear();
-            txtAnh.DataBindings.Add("text", DataGrid_SanPham.DataSource, "Anh");
+            picAnh.DataBindings.Clear();
+            picAnh.DataBindings.Add("Text", DataGrid_SanPham.DataSource, "Anh");
 
             txtNgayTao.DataBindings.Clear();
-            txtNgayTao.DataBindings.Add("text", DataGrid_SanPham.DataSource, "NgayTao");
+            txtNgayTao.DataBindings.Add("Value", DataGrid_SanPham.DataSource, "NgayTao");
 
             txtLuotXem.DataBindings.Clear();
-            txtLuotXem.DataBindings.Add("text", DataGrid_SanPham.DataSource, "LuotXem");
+            txtLuotXem.DataBindings.Add("Text", DataGrid_SanPham.DataSource, "LuotXem");
         }
 
         private void SanPham_Load(object sender, EventArgs e)
@@ -77,12 +80,15 @@ namespace Du_an
             txtId_SanPham.Text = "";
             cboManhacc.Text = null;
             txtTen.Text = "";
-            txtGia.Value = 0;
+            txtGia.Text = "0";
             txtNoiDung.Text = "";
-            txtGiamGia.Value = 0;
-            txtAnh.Image = null;
+            txtGiamGia.Text = "0";
+            //byte[] b = ImageToByteArray(picAnh.Image);
+            
+            picAnh.Image = null;
+            //picAnh.Image = ByteArrayToImage(b);
             txtNgayTao.Text = System.DateTime.Now.ToString("dd MMMM yyyy");
-            txtLuotXem.Value = 0;
+            txtLuotXem.Text = "0";
             txtId_SanPham.Focus();
             btnLuu.Enabled = true;
             btnSua.Enabled = false;
@@ -109,18 +115,18 @@ namespace Du_an
                 if (tb == DialogResult.OK)
                 {
                     //string sql_luu = "Insert into SanPham values ('" + txtId_SanPham.Text + "', '" + cboManhacc.SelectedValue + "', '" + txtTen.Text + "', " + txtGia.Value + ", '" + txtNoiDung.Text + "', " + txtGiamGia.Value + ", '" + txtAnh.ImageLocation + "', '" + txtNgayTao.Text + "', " + txtLuotXem.Value + ")";
-                    byte[] b = ImageToByteArray(txtAnh.Image);
+                    byte[] b = ImageToByteArray(picAnh.Image);
                     cnn.Open();
                     SqlCommand cmd = new SqlCommand("Insert into SanPham values(@Id_SanPham, @MaNhacc, @Ten, @Gia, @NoiDung, @GiamGia, @Anh, @NgayTao, @LuotXem)", cnn);
                     cmd.Parameters.Add("@Id_SanPham", txtId_SanPham.Text);
                     cmd.Parameters.Add("@MaNhacc", cboManhacc.SelectedValue);
                     cmd.Parameters.Add("@Ten", txtTen.Text);
-                    cmd.Parameters.Add("@Gia", txtGia.Value);
+                    cmd.Parameters.Add("@Gia", txtGia.Text);
                     cmd.Parameters.Add("@NoiDung", txtNoiDung.Text);
-                    cmd.Parameters.Add("@GiamGia", txtGiamGia.Value);
+                    cmd.Parameters.Add("@GiamGia", txtGiamGia.Text);
                     cmd.Parameters.Add("@Anh", b);
                     cmd.Parameters.Add("@NgayTao", txtNgayTao.Text);
-                    cmd.Parameters.Add("@LuotXem", txtLuotXem.Value);
+                    cmd.Parameters.Add("@LuotXem", txtLuotXem.Text);
                     cmd.ExecuteNonQuery();
                     cnn.Close();
                 }
@@ -147,7 +153,8 @@ namespace Du_an
             tb = MessageBox.Show("Bạn có muốn sửa không", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (tb == DialogResult.OK)
             {
-                string sql_sua = "update SanPham set Manhacc = '" + cboManhacc.SelectedValue + "', Ten = '" + txtTen.Text + "', Gia = " + txtGia.Value + ", NoiDung = '" + txtNoiDung.Text + "', GiamGia = " + txtGiamGia.Value + ", Anh = '" + txtAnh.Text + "', NgayTao = '" + txtNgayTao.Text + "', LuotXem = " + txtLuotXem.Value + " where Id_SanPham ='" + txtId_SanPham.Text + "'";
+                //byte[] picAnhString = ImageToByteArray(picAnh.Image);
+                string sql_sua = "update SanPham set Manhacc = '" + cboManhacc.SelectedValue + "', Ten = '" + txtTen.Text + "', Gia = '" + txtGia.Text + "', NoiDung = '" + txtNoiDung.Text + "', GiamGia = '" + txtGiamGia.Text + "', Anh = '" + picAnh.Text + "' , NgayTao = '" + txtNgayTao.Text + "', LuotXem = '" + txtLuotXem.Text + "' where Id_SanPham ='" + txtId_SanPham.Text + "'";
                 kn.ThucThi(sql_sua);
             }
             Bang_SanPham();
@@ -183,9 +190,29 @@ namespace Du_an
             openFileDialog1.FilterIndex = 1;
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                txtAnh.ImageLocation = openFileDialog1.FileName;
+                picAnh.ImageLocation = openFileDialog1.FileName;
                 textBox1.Text = openFileDialog1.FileName;
             }
+        }
+
+        private void btnTaoMoi_Click_1(object sender, EventArgs e)
+        {
+            txtId_SanPham.Text = "";
+            cboManhacc.Text = null;
+            txtTen.Text = "";
+            txtGia.Text = "0";
+            txtNoiDung.Text = "";
+            txtGiamGia.Text = "0";
+            //byte[] b = ImageToByteArray(picAnh.Image);
+
+            picAnh.Image = null;
+            //picAnh.Image = ByteArrayToImage(b);
+            txtNgayTao.Text = System.DateTime.Now.ToString("dd MMMM yyyy");
+            txtLuotXem.Text = "0";
+            txtId_SanPham.Focus();
+            btnLuu.Enabled = true;
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
         }
     }
 }
