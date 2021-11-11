@@ -31,7 +31,6 @@ namespace Du_an
             cboIdNguoiDung.DataSource = dta;
             cboIdNguoiDung.DisplayMember = "Id_NguoiDung";
             cboIdNguoiDung.ValueMember = "Id_NguoiDung";
-
         }
 
 

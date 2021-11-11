@@ -68,6 +68,7 @@ E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du-an.exe
 E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du-an.pdb
 E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.SanPham.resources
 E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.TonKho.resources
+<<<<<<< HEAD
 C:\Users\NAMPC\Desktop\BICHPHUONG\Nhom.net\Du-an\bin\Debug\Du-an.exe.config
 C:\Users\NAMPC\Desktop\BICHPHUONG\Nhom.net\Du-an\obj\Debug\Du-an.exe
 C:\Users\NAMPC\Desktop\BICHPHUONG\Nhom.net\Du-an\obj\Debug\Du-an.pdb
@@ -101,3 +102,13 @@ C:\Users\NAMPC\Desktop\BICHPHUONG\Nhom.net\Du-an\obj\Debug\Du-an.csproj.Generate
 C:\Users\NAMPC\Desktop\BICHPHUONG\Nhom.net\Du-an\obj\Debug\Du_an.NguoiDung.resources
 C:\Users\NAMPC\Desktop\BICHPHUONG\Nhom.net\Du-an\obj\Debug\Du_an.GiaoDich.resources
 C:\Users\NAMPC\Desktop\BICHPHUONG\Nhom.net\Du-an\obj\Debug\Du_an.Bc_NgDung.resources
+=======
+D:\NEU\Du-an\Du-an\obj\Debug\Du_an.SanPham.resources
+D:\NEU\Du-an\Du-an\obj\Debug\Du_an.TonKho.resources
+D:\NEU\Du-an\Du-an\obj\Debug\Du_an.TimKiemSP.resources
+E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.TimKiemSP.resources
+E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.Bc_KhoHang.resources
+E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.Bc_SPham.resources
+D:\NEU\Du-an\Du-an\obj\Debug\Du_an.Bc_KhoHang.resources
+D:\NEU\Du-an\Du-an\obj\Debug\Du_an.Bc_SPham.resources
+>>>>>>> 45082e912ba4ef75e889471fb433657b5a6c92d4

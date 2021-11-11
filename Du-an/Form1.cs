@@ -52,5 +52,23 @@ namespace Du_an
             Form TonKho = new TonKho();
             TonKho.Show();
         }
+
+        private void timKiemSanPhamToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form TKSP = new TimKiemSP();
+            TKSP.Show();
+        }
+
+        private void tonKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form tkho = new Bc_KhoHang();
+            tkho.Show();
+        }
+
+        private void sanPhamToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form sp = new Bc_SPham();
+            sp.Show();
+        }
     }
 }

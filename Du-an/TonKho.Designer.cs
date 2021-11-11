@@ -39,7 +39,6 @@ namespace Du_an
             this.lblId_SanPham = new System.Windows.Forms.Label();
             this.txtNgay = new System.Windows.Forms.DateTimePicker();
             this.lblNgay = new System.Windows.Forms.Label();
-            this.txtSlCuoi = new System.Windows.Forms.TextBox();
             this.lblSlnhap = new System.Windows.Forms.Label();
             this.lblSldau = new System.Windows.Forms.Label();
             this.lblSlCuoi = new System.Windows.Forms.Label();
@@ -48,6 +47,7 @@ namespace Du_an
             this.txtSldau = new System.Windows.Forms.NumericUpDown();
             this.txtSlxuat = new System.Windows.Forms.NumericUpDown();
             this.txtSlnhap = new System.Windows.Forms.NumericUpDown();
+            this.txtSlCuoi = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_TonKho)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSldau)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSlxuat)).BeginInit();
@@ -167,15 +167,6 @@ namespace Du_an
             this.lblNgay.TabIndex = 125;
             this.lblNgay.Text = "Ngày: ";
             // 
-            // txtSlCuoi
-            // 
-            this.txtSlCuoi.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtSlCuoi.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSlCuoi.Location = new System.Drawing.Point(185, 263);
-            this.txtSlCuoi.Name = "txtSlCuoi";
-            this.txtSlCuoi.Size = new System.Drawing.Size(510, 29);
-            this.txtSlCuoi.TabIndex = 134;
-            // 
             // lblSlnhap
             // 
             this.lblSlnhap.AutoSize = true;
@@ -232,7 +223,7 @@ namespace Du_an
             // txtSldau
             // 
             this.txtSldau.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSldau.Location = new System.Drawing.Point(185, 149);
+            this.txtSldau.Location = new System.Drawing.Point(185, 148);
             this.txtSldau.Maximum = new decimal(new int[] {
             6,
             0,
@@ -268,17 +259,28 @@ namespace Du_an
             this.txtSlnhap.Size = new System.Drawing.Size(510, 29);
             this.txtSlnhap.TabIndex = 138;
             // 
+            // txtSlCuoi
+            // 
+            this.txtSlCuoi.AutoSize = true;
+            this.txtSlCuoi.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSlCuoi.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.txtSlCuoi.Location = new System.Drawing.Point(182, 263);
+            this.txtSlCuoi.Name = "txtSlCuoi";
+            this.txtSlCuoi.Size = new System.Drawing.Size(115, 22);
+            this.txtSlCuoi.TabIndex = 139;
+            this.txtSlCuoi.Text = ".....................";
+            // 
             // TonKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(893, 487);
             this.ControlBox = false;
+            this.Controls.Add(this.txtSlCuoi);
             this.Controls.Add(this.txtSlnhap);
             this.Controls.Add(this.txtSlxuat);
             this.Controls.Add(this.txtSldau);
             this.Controls.Add(this.cboId_SanPham);
-            this.Controls.Add(this.txtSlCuoi);
             this.Controls.Add(this.lblSlnhap);
             this.Controls.Add(this.lblSldau);
             this.Controls.Add(this.lblSlCuoi);
@@ -317,7 +319,6 @@ namespace Du_an
         private System.Windows.Forms.Label lblId_SanPham;
         private System.Windows.Forms.DateTimePicker txtNgay;
         private System.Windows.Forms.Label lblNgay;
-        private System.Windows.Forms.TextBox txtSlCuoi;
         private System.Windows.Forms.Label lblSlnhap;
         private System.Windows.Forms.Label lblSldau;
         private System.Windows.Forms.Label lblSlCuoi;
@@ -326,5 +327,6 @@ namespace Du_an
         private System.Windows.Forms.NumericUpDown txtSldau;
         private System.Windows.Forms.NumericUpDown txtSlxuat;
         private System.Windows.Forms.NumericUpDown txtSlnhap;
+        private System.Windows.Forms.Label txtSlCuoi;
     }
 }
