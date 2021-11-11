@@ -65,12 +65,6 @@
     <Compile Include="Bc_DonHang.Designer.cs">
       <DependentUpon>Bc_DonHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bc_GiaoDich.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Bc_GiaoDich.Designer.cs">
-      <DependentUpon>Bc_GiaoDich.cs</DependentUpon>
-    </Compile>
     <Compile Include="Bc_KhoHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,9 +170,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Bc_DonHang.resx">
       <DependentUpon>Bc_DonHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Bc_GiaoDich.resx">
-      <DependentUpon>Bc_GiaoDich.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bc_KhoHang.resx">
       <DependentUpon>Bc_KhoHang.cs</DependentUpon>
