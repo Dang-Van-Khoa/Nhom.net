@@ -16,7 +16,7 @@ namespace Du_an
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GiaoDich());
+            Application.Run(new Form1());
         }
     }
 }

@@ -308,7 +308,7 @@
             this.dataGrid_GiaoDich.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGrid_GiaoDich.Location = new System.Drawing.Point(37, 378);
             this.dataGrid_GiaoDich.Name = "dataGrid_GiaoDich";
-            this.dataGrid_GiaoDich.Size = new System.Drawing.Size(711, 150);
+            this.dataGrid_GiaoDich.Size = new System.Drawing.Size(621, 150);
             this.dataGrid_GiaoDich.TabIndex = 151;
             // 
             // cboIdNguoiDung

@@ -112,3 +112,7 @@ E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.Bc_SPham.resources
 D:\NEU\Du-an\Du-an\obj\Debug\Du_an.Bc_KhoHang.resources
 D:\NEU\Du-an\Du-an\obj\Debug\Du_an.Bc_SPham.resources
 >>>>>>> 45082e912ba4ef75e889471fb433657b5a6c92d4
+D:\NEU\Du-an\Du-an\obj\Debug\Du_an.Bc_GiaoDich.resources
+D:\NEU\Du-an\Du-an\obj\Debug\Du_an.Bc_NgDung.resources
+D:\NEU\Du-an\Du-an\obj\Debug\Du_an.GiaoDich.resources
+D:\NEU\Du-an\Du-an\obj\Debug\Du_an.NguoiDung.resources

@@ -70,5 +70,17 @@ namespace Du_an
             Form sp = new Bc_SPham();
             sp.Show();
         }
+
+        private void nguoiDungToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form ND = new NguoiDung();
+            ND.Show();
+        }
+
+        private void giaoDichToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form GD = new GiaoDich();
+            GD.Show();
+        }
     }
 }
