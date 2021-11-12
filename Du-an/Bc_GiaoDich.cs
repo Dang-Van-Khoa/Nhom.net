@@ -16,5 +16,15 @@ namespace Du_an
         {
             InitializeComponent();
         }
+
+        KetNoi kn = new KetNoi();
+        private void Bc_GiaoDich_Load(object sender, EventArgs e)
+        {
+            DataTable dta = new DataTable();
+            dta = kn.Lay_DulieuBang("Select * from GiaoDich");
+            Bc_GDich BC = new Bc_GDich();
+            BC.SetDataSource(dta);
+            CRVGiaoDich.ReportSource = BC;
+        }
     }
 }

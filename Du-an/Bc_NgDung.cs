@@ -24,7 +24,7 @@ namespace Du_an
             dta = kn.Lay_DulieuBang("Select * from NguoiDung");
             Bc_NguoiDung BC = new Bc_NguoiDung();
             BC.SetDataSource(dta);
-           // CRV.ReportSource = BC;
+            CRVNguoiDung.ReportSource = BC;
         }
     }
 }
