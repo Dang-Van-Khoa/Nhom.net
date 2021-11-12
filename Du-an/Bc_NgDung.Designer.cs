@@ -28,13 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.CRVNguoiDung = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
+            // 
+            // CRVNguoiDung
+            // 
+            this.CRVNguoiDung.ActiveViewIndex = -1;
+            this.CRVNguoiDung.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CRVNguoiDung.Cursor = System.Windows.Forms.Cursors.Default;
+            this.CRVNguoiDung.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CRVNguoiDung.Location = new System.Drawing.Point(0, 0);
+            this.CRVNguoiDung.Name = "CRVNguoiDung";
+            this.CRVNguoiDung.Size = new System.Drawing.Size(868, 261);
+            this.CRVNguoiDung.TabIndex = 0;
             // 
             // Bc_NgDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(868, 261);
+            this.Controls.Add(this.CRVNguoiDung);
             this.Name = "Bc_NgDung";
             this.Text = "Bc_NgDung";
             this.Load += new System.EventHandler(this.Bc_NgDung_Load);
@@ -43,5 +56,7 @@
         }
 
         #endregion
+
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer CRVNguoiDung;
     }
 }

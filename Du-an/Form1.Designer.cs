@@ -48,6 +48,8 @@ namespace Du_an
             this.bcNhaccToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tonKhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sanPhamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.giaoDichToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nguoiDungToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -145,8 +147,9 @@ namespace Du_an
             // dangXuatToolStripMenuItem
             // 
             this.dangXuatToolStripMenuItem.Name = "dangXuatToolStripMenuItem";
-            this.dangXuatToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.dangXuatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dangXuatToolStripMenuItem.Text = "Dang xuat";
+            this.dangXuatToolStripMenuItem.Click += new System.EventHandler(this.dangXuatToolStripMenuItem_Click);
             // 
             // dangKyToolStripMenuItem
             // 
@@ -167,7 +170,9 @@ namespace Du_an
             this.donDatToolStripMenuItem,
             this.bcNhaccToolStripMenuItem,
             this.tonKhoToolStripMenuItem,
-            this.sanPhamToolStripMenuItem});
+            this.sanPhamToolStripMenuItem,
+            this.giaoDichToolStripMenuItem1,
+            this.nguoiDungToolStripMenuItem1});
             this.baoCaoToolStripMenuItem.Name = "baoCaoToolStripMenuItem";
             this.baoCaoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.baoCaoToolStripMenuItem.Text = "Bao cao";
@@ -175,30 +180,44 @@ namespace Du_an
             // donDatToolStripMenuItem
             // 
             this.donDatToolStripMenuItem.Name = "donDatToolStripMenuItem";
-            this.donDatToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.donDatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.donDatToolStripMenuItem.Text = "Don Dat";
             this.donDatToolStripMenuItem.Click += new System.EventHandler(this.donDatToolStripMenuItem_Click);
             // 
             // bcNhaccToolStripMenuItem
             // 
             this.bcNhaccToolStripMenuItem.Name = "bcNhaccToolStripMenuItem";
-            this.bcNhaccToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.bcNhaccToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.bcNhaccToolStripMenuItem.Text = "Bc_Nhacc";
             this.bcNhaccToolStripMenuItem.Click += new System.EventHandler(this.bcNhaccToolStripMenuItem_Click);
             // 
             // tonKhoToolStripMenuItem
             // 
             this.tonKhoToolStripMenuItem.Name = "tonKhoToolStripMenuItem";
-            this.tonKhoToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.tonKhoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tonKhoToolStripMenuItem.Text = "Kho Hàng";
             this.tonKhoToolStripMenuItem.Click += new System.EventHandler(this.tonKhoToolStripMenuItem_Click);
             // 
             // sanPhamToolStripMenuItem
             // 
             this.sanPhamToolStripMenuItem.Name = "sanPhamToolStripMenuItem";
-            this.sanPhamToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.sanPhamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sanPhamToolStripMenuItem.Text = "Sản Phẩm";
             this.sanPhamToolStripMenuItem.Click += new System.EventHandler(this.sanPhamToolStripMenuItem_Click);
+            // 
+            // giaoDichToolStripMenuItem1
+            // 
+            this.giaoDichToolStripMenuItem1.Name = "giaoDichToolStripMenuItem1";
+            this.giaoDichToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.giaoDichToolStripMenuItem1.Text = "Giao Dịch";
+            this.giaoDichToolStripMenuItem1.Click += new System.EventHandler(this.giaoDichToolStripMenuItem1_Click);
+            // 
+            // nguoiDungToolStripMenuItem1
+            // 
+            this.nguoiDungToolStripMenuItem1.Name = "nguoiDungToolStripMenuItem1";
+            this.nguoiDungToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.nguoiDungToolStripMenuItem1.Text = "Người Dùng";
+            this.nguoiDungToolStripMenuItem1.Click += new System.EventHandler(this.nguoiDungToolStripMenuItem1_Click);
             // 
             // Form1
             // 
@@ -239,6 +258,8 @@ namespace Du_an
         private System.Windows.Forms.ToolStripMenuItem bcNhaccToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tonKhoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sanPhamToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem giaoDichToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem nguoiDungToolStripMenuItem1;
     }
 }
 
