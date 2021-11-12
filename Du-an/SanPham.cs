@@ -78,13 +78,14 @@ namespace Du_an
         private void btnChonAnh_Click(object sender, EventArgs e)
         {
             openFileDialog1.InitialDirectory = "D://NEU";
-            openFileDialog1.Title = "Chọn file để upload";
-            openFileDialog1.Filter = "Chọn loại ảnh(*.jpg)|*.jpg|All files (*.*)|*.*";
+            openFileDialog1.Title = "Chọn ảnh minh hoạ cho sản phẩm";
+            openFileDialog1.Filter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg)|*.jpg|GIF(*.gif)|*.gif|All files(*.*)|*.*";
             openFileDialog1.FilterIndex = 1;
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 picAnh.ImageLocation = openFileDialog1.FileName;
-                txtAnh.Text = openFileDialog1.FileName;
+                picAnh.SizeMode = PictureBoxSizeMode.StretchImage;
+                //txtAnh.Text = openFileDialog1.FileName;
             }
         }
 
@@ -96,10 +97,7 @@ namespace Du_an
             txtGia.Text = "0";
             txtNoiDung.Text = "";
             txtGiamGia.Text = "0";
-            //byte[] b = ImageToByteArray(picAnh.Image);
-
             picAnh.Image = null;
-            //picAnh.Image = ByteArrayToImage(b);
             txtNgayTao.Text = System.DateTime.Now.ToString("dd MMMM yyyy");
             txtLuotXem.Text = "0";
             txtId_SanPham.Focus();
@@ -127,7 +125,6 @@ namespace Du_an
                 tb = MessageBox.Show("Bạn có muốn lưu không", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (tb == DialogResult.OK)
                 {
-                    //string sql_luu = "Insert into SanPham values ('" + txtId_SanPham.Text + "', '" + cboManhacc.SelectedValue + "', '" + txtTen.Text + "', " + txtGia.Value + ", '" + txtNoiDung.Text + "', " + txtGiamGia.Value + ", '" + txtAnh.ImageLocation + "', '" + txtNgayTao.Text + "', " + txtLuotXem.Value + ")";
                     byte[] b = ImageToByteArray(picAnh.Image);
                     cnn.Open();
                     SqlCommand cmd = new SqlCommand("Insert into SanPham values(@Id_SanPham, @MaNhacc, @Ten, @Gia, @NoiDung, @GiamGia, @Anh, @NgayTao, @LuotXem)", cnn);
@@ -158,9 +155,20 @@ namespace Du_an
             tb = MessageBox.Show("Bạn có muốn sửa không", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (tb == DialogResult.OK)
             {
-                //byte[] picAnhString = ImageToByteArray(picAnh.Image);
-                string sql_sua = "update SanPham set Manhacc = '" + cboManhacc.SelectedValue + "', Ten = '" + txtTen.Text + "', Gia = '" + txtGia.Text + "', NoiDung = '" + txtNoiDung.Text + "', GiamGia = '" + txtGiamGia.Text + "', Anh = '" + picAnh.Text + "' , NgayTao = '" + txtNgayTao.Text + "', LuotXem = '" + txtLuotXem.Text + "' where Id_SanPham ='" + txtId_SanPham.Text + "'";
-                kn.ThucThi(sql_sua);
+                byte[] b = ImageToByteArray(picAnh.Image);
+                cnn.Open();
+                SqlCommand cmd = new SqlCommand("update SanPham set Manhacc = @MaNhacc, Ten = @Ten, Gia = @Gia, NoiDung = @NoiDung, GiamGia = @GiamGia, Anh = @Anh, NgayTao = @NgayTao, LuotXem = @LuotXem where Id_SanPham = @Id_SanPham", cnn);
+                cmd.Parameters.Add("@Id_SanPham", txtId_SanPham.Text);
+                cmd.Parameters.Add("@MaNhacc", cboManhacc.SelectedValue);
+                cmd.Parameters.Add("@Ten", txtTen.Text);
+                cmd.Parameters.Add("@Gia", txtGia.Text);
+                cmd.Parameters.Add("@NoiDung", txtNoiDung.Text);
+                cmd.Parameters.Add("@GiamGia", txtGiamGia.Text);
+                cmd.Parameters.Add("@Anh", b);
+                cmd.Parameters.Add("@NgayTao", txtNgayTao.Text);
+                cmd.Parameters.Add("@LuotXem", txtLuotXem.Text);
+                cmd.ExecuteNonQuery();
+                cnn.Close();
             }
             Bang_SanPham();
             HienThi_DuLieu();
@@ -187,6 +195,7 @@ namespace Du_an
             if (tb == DialogResult.OK) this.Close();
         }
 
+        //Chuyển từ Image sang byte[]
         byte[] ImageToByteArray(Image img)
         {
             MemoryStream m = new MemoryStream();

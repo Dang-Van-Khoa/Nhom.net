@@ -32,7 +32,6 @@ namespace Du_an
             this.picAnh = new System.Windows.Forms.PictureBox();
             this.txtLuotXem = new System.Windows.Forms.Label();
             this.btnTaoMoi = new System.Windows.Forms.Button();
-            this.txtAnh = new System.Windows.Forms.TextBox();
             this.btnChonAnh = new System.Windows.Forms.Button();
             this.DataGrid_SanPham = new System.Windows.Forms.DataGridView();
             this.lblLuotXem = new System.Windows.Forms.Label();
@@ -93,14 +92,6 @@ namespace Du_an
             this.btnTaoMoi.Text = "Tạo mới";
             this.btnTaoMoi.UseVisualStyleBackColor = true;
             this.btnTaoMoi.Click += new System.EventHandler(this.btnTaoMoi_Click);
-            // 
-            // txtAnh
-            // 
-            this.txtAnh.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAnh.Location = new System.Drawing.Point(437, 82);
-            this.txtAnh.Name = "txtAnh";
-            this.txtAnh.Size = new System.Drawing.Size(322, 29);
-            this.txtAnh.TabIndex = 160;
             // 
             // btnChonAnh
             // 
@@ -282,15 +273,16 @@ namespace Du_an
             // 
             // txtGiamGia
             // 
-            this.txtGiamGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiamGia.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGiamGia.Location = new System.Drawing.Point(209, 401);
             this.txtGiamGia.Name = "txtGiamGia";
             this.txtGiamGia.Size = new System.Drawing.Size(549, 29);
             this.txtGiamGia.TabIndex = 173;
+            this.txtGiamGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtNoiDung
             // 
-            this.txtNoiDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNoiDung.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNoiDung.Location = new System.Drawing.Point(209, 328);
             this.txtNoiDung.Multiline = true;
             this.txtNoiDung.Name = "txtNoiDung";
@@ -299,11 +291,12 @@ namespace Du_an
             // 
             // txtGia
             // 
-            this.txtGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGia.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGia.Location = new System.Drawing.Point(209, 291);
             this.txtGia.Name = "txtGia";
             this.txtGia.Size = new System.Drawing.Size(549, 29);
             this.txtGia.TabIndex = 171;
+            this.txtGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblGia
             // 
@@ -353,7 +346,6 @@ namespace Du_an
             this.Controls.Add(this.picAnh);
             this.Controls.Add(this.txtLuotXem);
             this.Controls.Add(this.btnTaoMoi);
-            this.Controls.Add(this.txtAnh);
             this.Controls.Add(this.btnChonAnh);
             this.Controls.Add(this.DataGrid_SanPham);
             this.Controls.Add(this.lblLuotXem);
@@ -385,7 +377,6 @@ namespace Du_an
         private System.Windows.Forms.PictureBox picAnh;
         private System.Windows.Forms.Label txtLuotXem;
         private System.Windows.Forms.Button btnTaoMoi;
-        private System.Windows.Forms.TextBox txtAnh;
         private System.Windows.Forms.Button btnChonAnh;
         private System.Windows.Forms.DataGridView DataGrid_SanPham;
         private System.Windows.Forms.Label lblLuotXem;
