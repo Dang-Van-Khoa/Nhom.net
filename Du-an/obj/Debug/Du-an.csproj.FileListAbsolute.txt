@@ -169,3 +169,4 @@ E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.Bc_NgDung.resources
 E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.GiaoDich.resources
 E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.NguoiDung.resources
 >>>>>>> a0d38ddd5ad365afbaf2f48a8b5d681725961dc3
+C:\Nhom.net\Du-an\obj\Debug\Du_an.Bc_Danhmucsanpham.resources

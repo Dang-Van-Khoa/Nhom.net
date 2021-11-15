@@ -59,6 +59,18 @@
       <DependentUpon>Bc_DANGNHAP.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Bc_Danhmuc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bc_Danhmuc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bc_Danhmucsanpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bc_Danhmucsanpham.Designer.cs">
+      <DependentUpon>Bc_Danhmucsanpham.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bc_dnhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +211,13 @@
     <EmbeddedResource Include="Bc_DANGNHAP.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Bc_DANGNHAP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bc_Danhmuc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Bc_Danhmuc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bc_Danhmucsanpham.resx">
+      <DependentUpon>Bc_Danhmucsanpham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bc_dnhap.resx">
       <DependentUpon>Bc_dnhap.cs</DependentUpon>

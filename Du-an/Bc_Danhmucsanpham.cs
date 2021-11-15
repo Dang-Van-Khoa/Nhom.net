@@ -24,7 +24,7 @@ namespace Du_an
             dta = kn.Lay_DulieuBang("Select * from DANHMUC");
             Bc_Danhmuc BC = new Bc_Danhmuc();
             BC.SetDataSource(dta);
-            CRV.ReportSource = BC;
+            CRV_Dmuc.ReportSource = BC;
         }
     }
 }

@@ -18,11 +18,8 @@ namespace Du_an
 
         public void KetNoi_Dulieu()
         {
-<<<<<<< HEAD
-            string strKetNoi = @"Data Source=.;Initial Catalog=QLBH;Integrated Security=True";
-=======
-            string strKetNoi = @"Data Source=DESKTOP-2021BGT;Initial Catalog=QLBH;Integrated Security=True";
->>>>>>> a0d38ddd5ad365afbaf2f48a8b5d681725961dc3
+
+            string strKetNoi = @"Data Source=. ;Initial Catalog=QLBH;Integrated Security=True";
             cnn = new SqlConnection(strKetNoi);
             cnn.Open();
         }
