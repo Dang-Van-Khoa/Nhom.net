@@ -53,6 +53,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bc_DANGNHAP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bc_DANGNHAP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bc_dnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bc_dnhap.Designer.cs">
+      <DependentUpon>Bc_dnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangnhap.Designer.cs">
+      <DependentUpon>Dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Danhmuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danhmuc.Designer.cs">
+      <DependentUpon>Danhmuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bc_DonDat.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -164,12 +188,27 @@
     <Compile Include="TimKiemSP.Designer.cs">
       <DependentUpon>TimKiemSP.cs</DependentUpon>
     </Compile>
-    <Compile Include="TonKho.cs">
+    <Compile Include="..\..\lập trình .Net\TonKho.cs">
       <SubType>Form</SubType>
+      <Link>TonKho.cs</Link>
     </Compile>
-    <Compile Include="TonKho.Designer.cs">
+    <Compile Include="..\..\lập trình .Net\TonKho.Designer.cs">
       <DependentUpon>TonKho.cs</DependentUpon>
+      <Link>TonKho.Designer.cs</Link>
     </Compile>
+    <EmbeddedResource Include="Bc_DANGNHAP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Bc_DANGNHAP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bc_dnhap.resx">
+      <DependentUpon>Bc_dnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dangnhap.resx">
+      <DependentUpon>Dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danhmuc.resx">
+      <DependentUpon>Danhmuc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bc_DonDat.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Bc_DonDat.cs</LastGenOutput>
@@ -238,8 +277,9 @@
     <EmbeddedResource Include="TimKiemSP.resx">
       <DependentUpon>TimKiemSP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TonKho.resx">
+    <EmbeddedResource Include="..\..\lập trình .Net\TonKho.resx">
       <DependentUpon>TonKho.cs</DependentUpon>
+      <Link>TonKho.resx</Link>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

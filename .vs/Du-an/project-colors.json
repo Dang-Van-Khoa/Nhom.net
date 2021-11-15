@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c30e45de-3957-42cb-a5ca-9e58a7065338": {
+      "ProjectGuid": "c30e45de-3957-42cb-a5ca-9e58a7065338",
+      "DisplayName": "Du-an",
+      "ColorIndex": 0
+    },
+    "0e2edc85-3d1f-42c0-8d11-8890f9fa45ac": {
+      "ProjectGuid": "0e2edc85-3d1f-42c0-8d11-8890f9fa45ac",
+      "DisplayName": "baocao",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

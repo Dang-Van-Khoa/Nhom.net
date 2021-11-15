@@ -1,6 +1,7 @@
-﻿namespace Du_an
+﻿
+namespace Du_an
 {
-    partial class Bc_NgDung
+    partial class Bc_dnhap
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +29,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.CRV_Dnhap = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // Bc_NgDung
+            // CRV_Dnhap
+            // 
+            this.CRV_Dnhap.ActiveViewIndex = -1;
+            this.CRV_Dnhap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CRV_Dnhap.Cursor = System.Windows.Forms.Cursors.Default;
+            this.CRV_Dnhap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CRV_Dnhap.Location = new System.Drawing.Point(0, 0);
+            this.CRV_Dnhap.Name = "CRV_Dnhap";
+            this.CRV_Dnhap.Size = new System.Drawing.Size(800, 450);
+            this.CRV_Dnhap.TabIndex = 0;
+            // 
+            // Bc_dnhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1157, 380);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Bc_NgDung";
-            this.Text = "Bc_NgDung";
-            this.Load += new System.EventHandler(this.Bc_NgDung_Load);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CRV_Dnhap);
+            this.Name = "Bc_dnhap";
+            this.Text = "Bc_dnhap";
+            this.Load += new System.EventHandler(this.Bc_dnhap_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer CRV_Dnhap;
     }
 }

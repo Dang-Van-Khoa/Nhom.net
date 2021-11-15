@@ -1,0 +1,10 @@
+C:\Nhom.net\baocao\bin\Debug\baocao.exe.config
+C:\Nhom.net\baocao\bin\Debug\baocao.exe
+C:\Nhom.net\baocao\bin\Debug\baocao.pdb
+C:\Nhom.net\baocao\obj\Debug\baocao.csproj.AssemblyReference.cache
+C:\Nhom.net\baocao\obj\Debug\baocao.csproj.SuggestedBindingRedirects.cache
+C:\Nhom.net\baocao\obj\Debug\baocao.Properties.Resources.resources
+C:\Nhom.net\baocao\obj\Debug\baocao.csproj.GenerateResource.cache
+C:\Nhom.net\baocao\obj\Debug\baocao.csproj.CoreCompileInputs.cache
+C:\Nhom.net\baocao\obj\Debug\baocao.exe
+C:\Nhom.net\baocao\obj\Debug\baocao.pdb
