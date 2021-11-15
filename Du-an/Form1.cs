@@ -82,5 +82,22 @@ namespace Du_an
             Form GD = new GiaoDich();
             GD.Show();
         }
+
+        private void giaoDichToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form G_D = new Bc_GiaoDich();
+            G_D.Show();
+        }
+
+        private void nguoiDungToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form N_D = new Bc_NgDung();
+            N_D.Show();
+        }
+
+        private void dangXuatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -10,21 +10,21 @@ using System.Windows.Forms;
 
 namespace Du_an
 {
-    public partial class Bc_NgDung : Form
+    public partial class Bc_Danhmucsanpham : Form
     {
         KetNoi kn = new KetNoi();
-        public Bc_NgDung()
+        public Bc_Danhmucsanpham()
         {
             InitializeComponent();
         }
 
-        private void Bc_NgDung_Load(object sender, EventArgs e)
+        private void Bc_Danhmucsanpham_Load(object sender, EventArgs e)
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("Select * from NguoiDung");
-            Bc_NguoiDung BC = new Bc_NguoiDung();
+            dta = kn.Lay_DulieuBang("Select * from DANHMUC");
+            Bc_Danhmuc BC = new Bc_Danhmuc();
             BC.SetDataSource(dta);
-            CRVNguoiDung.ReportSource = BC;
+            CRV.ReportSource = BC;
         }
     }
 }
