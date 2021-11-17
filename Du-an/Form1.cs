@@ -99,5 +99,17 @@ namespace Du_an
         {
             Application.Exit();
         }
+
+        private void dangNhapToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form DN = new Dangnhap();
+            DN.Show();
+        }
+
+        private void danhMucSanPhamToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form DM = new Danhmuc();
+            DM.Show();
+        }
     }
 }

@@ -27,9 +27,14 @@ namespace Du_an
         private void button1_Click(object sender, EventArgs e)
         {
             DataTable dta = new DataTable();
-            string Sql_tk = string.Format("Execute ThongTinSP '{0}'", comboBox1.Text);
+            string Sql_tk = string.Format("Execute ThongTinSP '{1}'", comboBox1.Text);
             dta = kn.Lay_DulieuBang(Sql_tk);
             Grid_KETQUA.DataSource = dta;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

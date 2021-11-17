@@ -165,14 +165,14 @@ foreign key (Id_SanPham) references SanPham(Id_SanPham)
 Create Proc ThongTinSP @Ten varchar(100)
 as
 begin
-select Id_SanPham, Ten, Gia, Anh, SanPham.MaNhacc, TenNhacc
+select Id_SanPham, Ten, Gia, SanPham.MaNhacc, TenNhacc
 from SanPham, Nhacc
-where SanPham.Id_SanPham = Nhacc.MaNhacc and @Ten= Ten
+where SanPham.MaNhacc = Nhacc.MaNhacc and @Ten= Ten
 end;
 
 
 
 DROP PROC ThongTinSP
-EXEC ThongTinSP ''
+EXEC ThongTinSP 'quan'
 
-select * from DatHang
+select * from SanPham

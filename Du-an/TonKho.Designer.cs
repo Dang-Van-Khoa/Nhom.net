@@ -225,7 +225,7 @@ namespace Du_an
             this.txtSldau.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSldau.Location = new System.Drawing.Point(185, 148);
             this.txtSldau.Maximum = new decimal(new int[] {
-            6,
+            60000,
             0,
             0,
             0});
@@ -238,7 +238,7 @@ namespace Du_an
             this.txtSlxuat.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSlxuat.Location = new System.Drawing.Point(185, 225);
             this.txtSlxuat.Maximum = new decimal(new int[] {
-            6,
+            60000,
             0,
             0,
             0});
@@ -251,7 +251,7 @@ namespace Du_an
             this.txtSlnhap.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSlnhap.Location = new System.Drawing.Point(185, 186);
             this.txtSlnhap.Maximum = new decimal(new int[] {
-            6,
+            60000,
             0,
             0,
             0});

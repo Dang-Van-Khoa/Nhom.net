@@ -44,10 +44,15 @@
             // 
             // Bc_NgDung
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(1157, 380);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
             this.ClientSize = new System.Drawing.Size(868, 261);
             this.Controls.Add(this.CRVNguoiDung);
+>>>>>>> a0d38ddd5ad365afbaf2f48a8b5d681725961dc3
             this.Name = "Bc_NgDung";
             this.Text = "Bc_NgDung";
             this.Load += new System.EventHandler(this.Bc_NgDung_Load);
