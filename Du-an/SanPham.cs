@@ -15,7 +15,7 @@ namespace Du_an
     public partial class SanPham : Form
     {
         KetNoi kn = new KetNoi(); //khoi tao class
-        SqlConnection cnn = new SqlConnection(@"Data Source=DESKTOP-2021BGT;Initial Catalog=QLBH;Integrated Security=True");
+        SqlConnection cnn = new SqlConnection(@"Data Source=DESKTOP-5594BKK\SQLEXPRESS;Initial Catalog=QLBH;Integrated Security=True");
         public SanPham()
         {
             InitializeComponent();
