@@ -31,5 +31,10 @@ namespace Du_an
             dta = kn.Lay_DulieuBang(Sql_tk);
             Grid_KETQUA.DataSource = dta;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

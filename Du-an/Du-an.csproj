@@ -125,6 +125,12 @@
       <DependentUpon>Bc_TonKho.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,6 +223,9 @@
     <EmbeddedResource Include="Bc_TonKho.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Bc_TonKho.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DatHang.resx">
       <DependentUpon>DatHang.cs</DependentUpon>

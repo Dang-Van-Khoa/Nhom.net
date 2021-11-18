@@ -99,5 +99,11 @@ namespace Du_an
         {
             Application.Exit();
         }
+
+        private void dangNhapToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form dn = new DangNhap();
+            dn.Show();
+        }
     }
 }
