@@ -167,12 +167,12 @@ as
 begin
 select Id_SanPham, Ten, Gia, Anh, SanPham.MaNhacc, TenNhacc
 from SanPham, Nhacc
-where SanPham.Id_SanPham = Nhacc.MaNhacc and @Ten= Ten
+where SanPham.MaNhacc = Nhacc.MaNhacc and @Ten= Ten
 end;
 
 
 
 DROP PROC ThongTinSP
-EXEC ThongTinSP ''
+EXEC ThongTinSP 'fda'
 
-select * from DatHang
+select * from SanPham
