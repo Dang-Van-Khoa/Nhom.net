@@ -105,5 +105,11 @@ namespace Du_an
             Form dn = new DangNhap();
             dn.Show();
         }
+
+        private void danhMucSanPhamToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form dm = new Danhmuc();
+            dm.Show();
+        }
     }
 }

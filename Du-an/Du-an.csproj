@@ -131,6 +131,12 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Danhmuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danhmuc.Designer.cs">
+      <DependentUpon>Danhmuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danhmuc.resx">
+      <DependentUpon>Danhmuc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DatHang.resx">
       <DependentUpon>DatHang.cs</DependentUpon>

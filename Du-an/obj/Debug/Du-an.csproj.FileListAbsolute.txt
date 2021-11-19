@@ -121,3 +121,4 @@ E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.Bc_NgDung.resources
 E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.GiaoDich.resources
 E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.NguoiDung.resources
 E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.DangNhap.resources
+E:\LapTrinhNET\BTL\Nhom.net\Du-an\obj\Debug\Du_an.Danhmuc.resources

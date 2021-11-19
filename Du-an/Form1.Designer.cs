@@ -127,6 +127,7 @@ namespace Du_an
             this.danhMucSanPhamToolStripMenuItem.Name = "danhMucSanPhamToolStripMenuItem";
             this.danhMucSanPhamToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.danhMucSanPhamToolStripMenuItem.Text = "danh muc san pham";
+            this.danhMucSanPhamToolStripMenuItem.Click += new System.EventHandler(this.danhMucSanPhamToolStripMenuItem_Click);
             // 
             // taiKhoanToolStripMenuItem
             // 
@@ -141,21 +142,21 @@ namespace Du_an
             // dangNhapToolStripMenuItem
             // 
             this.dangNhapToolStripMenuItem.Name = "dangNhapToolStripMenuItem";
-            this.dangNhapToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dangNhapToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.dangNhapToolStripMenuItem.Text = "Dang nhap";
             this.dangNhapToolStripMenuItem.Click += new System.EventHandler(this.dangNhapToolStripMenuItem_Click);
             // 
             // dangXuatToolStripMenuItem
             // 
             this.dangXuatToolStripMenuItem.Name = "dangXuatToolStripMenuItem";
-            this.dangXuatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dangXuatToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.dangXuatToolStripMenuItem.Text = "Dang xuat";
             this.dangXuatToolStripMenuItem.Click += new System.EventHandler(this.dangXuatToolStripMenuItem_Click);
             // 
             // dangKyToolStripMenuItem
             // 
             this.dangKyToolStripMenuItem.Name = "dangKyToolStripMenuItem";
-            this.dangKyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dangKyToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.dangKyToolStripMenuItem.Text = "Dang ky";
             // 
             // timKiemSanPhamToolStripMenuItem
