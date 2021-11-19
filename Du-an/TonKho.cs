@@ -84,15 +84,6 @@ namespace Du_an
             SqlCommand smd = new SqlCommand(strKtra, kn.cnn);
             SqlDataReader doc_d1 = smd.ExecuteReader();
 
-            if (doc_d1.Read() == true)
-            {
-                MessageBox.Show("Ngày bị trùng, vui lòng nhập lại", "Thông báo");
-                txtNgay.Focus();
-                doc_d1.Close();
-                doc_d1.Dispose();
-            }
-            else
-            {
                 DialogResult tb;
                 tb = MessageBox.Show("Bạn có muốn lưu không", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (tb == DialogResult.OK)
@@ -105,7 +96,7 @@ namespace Du_an
                 btnLuu.Enabled = false;
                 btnSua.Enabled = true;
                 btnXoa.Enabled = true;
-            }
+            
         }
 
         private void btnSua_Click(object sender, EventArgs e)
